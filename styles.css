@@ -18,8 +18,8 @@ body {
 
 .board {
     border: 5px solid var(--border-color);
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     box-sizing: border-box;
     background-color: var(--board-bg-color);
     margin: auto;
@@ -31,7 +31,7 @@ body {
 
 .cell {
     border: 2px solid var(--border-color);
-    font-size: 100px;
+    font-size: 80px;
     display: flex;
     justify-content: center;
     font-family: 'Fredoka One', sans-serif;
