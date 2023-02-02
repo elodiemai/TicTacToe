@@ -10,9 +10,15 @@
     --player2-color: rgb(10, 105, 51);
     --message-font-color: rgb(68, 61, 61);
 }
+
+html, main {
+    width: 100%;
+    margin: 0;
+}
 body {
     font-family: 'Fredoka One', sans-serif;
     background-color: var(--body-bg-color);
+    margin: 0;
 }
 
 
@@ -22,10 +28,12 @@ body {
     width: 350px;
     box-sizing: border-box;
     background-color: var(--board-bg-color);
-    margin: auto;
     display: grid;
+    margin: auto;
+    margin-top: 15px;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     border-collapse: collapse;
+
 }
 
 
@@ -52,7 +60,7 @@ body {
 }
 
 .message {
-    width: 400px;
+    width: 350px;
     margin: auto;
     margin-top: 2rem;
     font-size: 2.5rem;
@@ -80,4 +88,20 @@ body {
 
 .deactivate {
     display: none;
+}
+
+
+@media only screen and (max-width: 350px){
+    .message {
+        width: 100%;
+        font-size: 15vw;
+        margin-top: 3vh;
+
+    }
+
+    .board {
+        width: 100vw;
+        height: 100vw;
+    }
+    
 }
